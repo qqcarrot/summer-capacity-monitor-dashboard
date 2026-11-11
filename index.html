@@ -3,12 +3,284 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Summer Capacity Monitor Dashboard</title>
+    <title>加盟夏季规划监控看板｜作品集</title>
+    <meta
+      name="description"
+      content="基于 NoCode 平台搭建的夏季运力规划监控看板作品页，展示四级下钻、40+指标可视化与自动归因能力。"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main>
-      <h1>Summer Capacity Monitor Dashboard</h1>
-      <p>作品集网页入口预留。后续我们会把这个页面逐步做成正式的项目展示页。</p>
-    </main>
+    <div class="page-shell">
+      <nav class="top-nav">
+        <div class="brand">
+          <div class="brand-badge">SC</div>
+          <div class="brand-copy">
+            <strong>Summer Capacity Monitor</strong>
+            <small>作品集案例页 / Portfolio Case</small>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="#overview">项目概览</a>
+          <a href="#architecture">方案设计</a>
+          <a href="#kpi">指标体系</a>
+          <a href="#highlights">项目亮点</a>
+        </div>
+      </nav>
+
+      <section class="hero" id="overview">
+        <article class="panel hero-main">
+          <div class="hero-tags">
+            <span class="tag primary">NoCode 平台搭建</span>
+            <span class="tag secondary">四级地理维度下钻</span>
+            <span class="tag">40+ 核心指标可视化</span>
+            <span class="tag">问题城市自动归因</span>
+          </div>
+          <h1>加盟夏季规划监控看板</h1>
+          <p>
+            围绕夏季外卖配送旺季的运力规划执行监控，我将规划数据与实际运营数据统一接入同一套看板，支持全国至城市四级下钻、趋势监控、明细分析与自动归因，帮助管理者从“人工拼表”切换到“打开即看”的结构化复盘方式。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#highlights">查看项目亮点</a>
+            <a class="button ghost" href="#role">查看我的角色</a>
+          </div>
+        </article>
+
+        <aside class="panel hero-side">
+          <h3>为什么这个项目值得放进作品集</h3>
+          <ul>
+            <li>它不是单一报表，而是一套完整的监控与诊断工具。</li>
+            <li>既体现经营分析能力，也体现产品化和结构化思考。</li>
+            <li>同时覆盖业务背景、数据建模、交互设计和结果价值。</li>
+            <li>很适合商业化运营、策略运营、产品运营、经营分析岗位展示。</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="metrics-grid">
+        <div class="metric-card">
+          <div class="kpi-label">数据接入</div>
+          <strong>19K+</strong>
+          <p>统一接入 18,500+ 行实际数据与 853 行规划数据，形成统一分析宽表。</p>
+        </div>
+        <div class="metric-card">
+          <div class="kpi-label">分析覆盖</div>
+          <strong>40+</strong>
+          <p>覆盖供需规模、效率、体验、运力达成、净增情况、承托比等多维指标。</p>
+        </div>
+        <div class="metric-card">
+          <div class="kpi-label">下钻能力</div>
+          <strong>4 级</strong>
+          <p>全国 → 大区 → 区域 → 城市四级联动，支持不同管理层穿透查看。</p>
+        </div>
+        <div class="metric-card">
+          <div class="kpi-label">效率提升</div>
+          <strong>30min → 即时</strong>
+          <p>将原本依赖手工取数拼表的监控流程，压缩为打开看板即可复盘。</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <span class="section-eyebrow">Background</span>
+          <h2 class="section-title">项目背景与业务问题</h2>
+          <p class="section-desc">
+            夏季是外卖配送的传统旺季，单量通常较平日提升 20%–30%。规划制定之后，真正困难的不只是“定目标”，而是持续判断规划是否达成、哪里掉队、为什么掉队，以及应该先采取什么动作。
+          </p>
+        </div>
+        <div class="content-card two-col">
+          <div>
+            <h3>原有流程的痛点</h3>
+            <p>
+              在项目落地前，管理者需要从多个 BI 报表中分别提取规划数据、实际运营数据和骑手质量数据，再手工拼接 Excel 进行分析。这个过程不仅耗时，而且不同层级常常存在口径不一致、趋势判断困难、异常城市无法快速归因的问题。
+            </p>
+          </div>
+          <div>
+            <h3>这个项目解决什么</h3>
+            <p>
+              我的目标不是单纯做一个“图更多”的看板，而是搭建一套结构化的监控工具：既能从宏观层面看趋势，也能从城市级别看问题，并通过自动标签尽可能缩短从发现问题到理解原因的路径。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="architecture">
+        <div class="section-header">
+          <span class="section-eyebrow">Architecture</span>
+          <h2 class="section-title">方案设计：从分散报表到统一监控工具</h2>
+          <p class="section-desc">
+            整体方案围绕“双 Tab 架构 + 数据建模 + 四级下钻 + 自动归因”展开，目的是让不同层级的管理者都能在同一套工具中完成趋势判断与精细诊断。
+          </p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>双 Tab 架构</h3>
+            <p>用“达成趋势”承接宏观判断，用“达成明细”承接城市级精细分析，避免把所有信息堆在同一页里。</p>
+          </div>
+          <div class="feature-card">
+            <h3>数据统一建模</h3>
+            <p>以日期 + 城市作为核心关联键，将 raw 实际数据与 plan 规划数据 Join 成统一分析视图。</p>
+          </div>
+          <div class="feature-card">
+            <h3>四级地理下钻</h3>
+            <p>支持全国、大区、区域、城市四级联动刷新，让总部、大区和区域管理者都能在自己的粒度上看数。</p>
+          </div>
+          <div class="feature-card">
+            <h3>自动归因逻辑</h3>
+            <p>通过规则引擎生成“盘点问题”和“问题归因”标签，把人工复盘中的高频判断沉淀成可重复使用的逻辑。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="kpi">
+        <div class="section-header">
+          <span class="section-eyebrow">KPI Framework</span>
+          <h2 class="section-title">指标体系：不是堆数据，而是搭监控框架</h2>
+          <p class="section-desc">
+            这个项目的核心不是“指标多”，而是指标如何服务于管理动作。指标体系既要帮助看清当前达成，也要帮助解释为什么没有达成。
+          </p>
+        </div>
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <h3>峰值规模进度</h3>
+            <p>围绕规划峰值有单人数、实际有单骑手数、加盟单进度、峰值有单进度等指标，判断旺季运力规模是否跑在目标轨道上。</p>
+            <ul>
+              <li>规划峰值有单人数</li>
+              <li>有单骑手数</li>
+              <li>加盟单进度</li>
+              <li>峰值有单进度</li>
+            </ul>
+          </div>
+          <div class="kpi-card">
+            <h3>运力达成</h3>
+            <p>用门槛值、封顶值、有效骑手数与达成率衡量运力池是否真正达到旺季要求，而不只是“看起来有人”。</p>
+            <ul>
+              <li>有效骑手数</li>
+              <li>门槛达成率</li>
+              <li>封顶达成率</li>
+              <li>站点达成占比</li>
+            </ul>
+          </div>
+          <div class="kpi-card">
+            <h3>净增与结构</h3>
+            <p>关注骑手供给端的变化趋势，包括净增骑手数、净增率、暑期工骑手数及占比，用于识别运力池是否健康可持续。</p>
+            <ul>
+              <li>净增骑手数</li>
+              <li>净增率</li>
+              <li>暑期工骑手数</li>
+              <li>暑期工占比</li>
+            </ul>
+          </div>
+          <div class="kpi-card">
+            <h3>体验与效率</h3>
+            <p>避免“为了达成而达成”，同步监控人效、配送时长、准时率等体验指标，保证运力扩张不以体验损失为代价。</p>
+            <ul>
+              <li>人效与规划效 gap</li>
+              <li>加盟配送时长</li>
+              <li>准时率</li>
+              <li>加盟 vs 大盘 gap</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <span class="section-eyebrow">Workflow</span>
+          <h2 class="section-title">这个项目的分析链路是怎么跑起来的</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span>Step 01</span>
+            <h4>统一接入规划与实际数据</h4>
+            <p>先把原本分散的规划表、运营表、质量表整理到一个统一分析视图里，解决口径不一致问题。</p>
+          </div>
+          <div class="timeline-item">
+            <span>Step 02</span>
+            <h4>搭建趋势监控视角</h4>
+            <p>通过按日 / 按周趋势图，帮助管理者快速判断哪些指标在改善、哪些指标在恶化。</p>
+          </div>
+          <div class="timeline-item">
+            <span>Step 03</span>
+            <h4>提供城市级明细筛查能力</h4>
+            <p>通过层级筛选、对比日期与多维表格，让问题城市可以被快速筛出来，而不是再回去临时跑数。</p>
+          </div>
+          <div class="timeline-item">
+            <span>Step 04</span>
+            <h4>用规则引擎生成自动归因标签</h4>
+            <p>把“问题是什么”和“可能为什么发生”这两个判断沉淀成自动标签，帮助复盘更快进入动作层。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="highlights">
+        <div class="section-header">
+          <span class="section-eyebrow">Highlights</span>
+          <h2 class="section-title">项目亮点：为什么它不像普通看板</h2>
+          <p class="section-desc">
+            真正让这个项目有作品集价值的，不只是图表，而是它把经营分析、数据建模、交互设计和问题归因连接成了一套完整的监控体验。
+          </p>
+        </div>
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <h4>亮点一：同时体现分析能力和产品意识</h4>
+            <p>这个项目既要定义指标和监控逻辑，也要考虑用户如何从趋势看到明细、从异常走到归因，因此天然兼具经营分析与产品设计属性。</p>
+          </div>
+          <div class="highlight-card">
+            <h4>亮点二：下钻能力让不同管理层都能使用</h4>
+            <p>总部关心全局，大区关心区域，区域关心城市。四级地理下钻让同一套工具可以服务不同层级，而不是每层都各自做一版报表。</p>
+          </div>
+          <div class="highlight-card">
+            <h4>亮点三：自动归因提升复盘效率</h4>
+            <p>最有产品化价值的部分，是把“发现问题之后还要人工想原因”的这一步尽量前置并结构化。它不是替代分析，而是显著缩短起步时间。</p>
+          </div>
+          <div class="highlight-card">
+            <h4>亮点四：业务价值能被直接感知</h4>
+            <ul>
+              <li>查看达成情况从平均 30 分钟降到打开即看</li>
+              <li>统一口径，减少不同层级数据对不齐问题</li>
+              <li>支持更快定位达成率偏低城市并跟进动作</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="role">
+        <div class="section-header">
+          <span class="section-eyebrow">My Role</span>
+          <h2 class="section-title">在这个项目中，我具体做了什么</h2>
+        </div>
+        <div class="content-card two-col">
+          <div>
+            <h3>我负责的核心工作</h3>
+            <ul>
+              <li>梳理运力规划执行监控的业务问题与分析目标</li>
+              <li>设计双 Tab 看板结构和指标分层逻辑</li>
+              <li>推动规划数据与实际数据统一接入</li>
+              <li>设计四级地理维度下钻与多维筛选方式</li>
+              <li>沉淀问题识别与自动归因规则</li>
+            </ul>
+          </div>
+          <div>
+            <h3>这个项目体现的能力</h3>
+            <ul>
+              <li>经营指标拆解与监控体系设计</li>
+              <li>多源数据整合与分析视图搭建</li>
+              <li>产品化表达与页面结构设计</li>
+              <li>问题识别、归因与复盘逻辑沉淀</li>
+              <li>把复杂业务材料整理成清晰可展示作品</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <h3>这就是我想放进 GitHub 的原因</h3>
+        <p>
+          我希望这个项目不只是停留在“简历上一行经历”，而是能以更完整、更专业的方式被面试官看到：有背景、有问题、有设计、有亮点、有结果，也能看出我如何把业务分析沉淀成可复用的工具。
+        </p>
+        <p class="footer-note">后续可以继续补充真实截图、README 链接、页面动效与英文版说明。</p>
+      </section>
+    </div>
   </body>
 </html>
