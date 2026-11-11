@@ -1,105 +1,17 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="夏季运力规划执行监控与问题城市诊断工具案例" />
-  <title>加盟夏季规划监控看板</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="#top"><span class="brand-mark">S26</span><span>加盟夏季规划监控</span></a>
-    <nav>
-      <a href="#background">项目背景</a><a href="#solution">解决方案</a><a href="#demo">看板体验</a><a href="#result">项目结果</a>
-    </nav>
-    <a class="header-cta" href="#demo">进入看板</a>
-  </header>
-
-  <main id="top">
-    <section class="hero wrap">
-      <div class="hero-copy">
-        <p class="eyebrow">OPERATIONS DATA PRODUCT · 2026 SUMMER</p>
-        <h1>加盟夏季规划<br /><span>监控看板</span></h1>
-        <p class="hero-desc">面向配送旺季运力规划执行的统一监控与诊断工具。整合规划与实际运营数据，支持全国至城市四级下钻、40+ 核心指标监控和问题城市自动归因。</p>
-        <div class="hero-actions"><a class="btn primary" href="#demo">体验交互看板 →</a><a class="btn secondary" href="#background">了解项目背景</a></div>
-        <div class="hero-meta"><span>数据规模 <strong>19K+</strong></span><span>核心指标 <strong>40+</strong></span><span>地理下钻 <strong>4级</strong></span><span>诊断效率 <strong>即时</strong></span></div>
-      </div>
-      <div class="hero-visual" aria-label="看板结构示意">
-        <div class="visual-head"><span>全国运力达成概览</span><i></i></div>
-        <div class="mini-kpis"><div><small>峰值有单进度</small><b>92.4%</b><em>↑ 3.2%</em></div><div><small>封顶达成率</small><b>86.8%</b><em>↑ 1.8%</em></div><div><small>问题城市</small><b>18</b><em class="warn">需关注</em></div></div>
-        <div class="mini-chart"><span style="height:34%"></span><span style="height:43%"></span><span style="height:39%"></span><span style="height:57%"></span><span style="height:63%"></span><span style="height:60%"></span><span style="height:76%"></span><span style="height:83%"></span><span style="height:91%"></span></div>
-        <div class="visual-foot"><span>趋势持续改善</span><span>更新于 08:00</span></div>
-      </div>
-    </section>
-
-    <section id="background" class="section wrap">
-      <div class="section-intro"><p class="eyebrow">01 · BUSINESS CONTEXT</p><h2>项目背景</h2><p>旺季运力规划制定之后，真正困难的是持续判断目标是否达成、哪些城市掉队，以及问题究竟来自招募、留存还是出勤。</p></div>
-      <div class="context-grid">
-        <article class="context-main"><span class="number">20%–30%</span><h3>夏季单量较平日显著增长</h3><p>业务需要提前为全国各城市设定峰值有单人数、门槛值与封顶值，并持续跟踪计划执行。但原有监控依赖多个 BI 报表和手工 Excel 拼接，一次完整排查平均约需 30 分钟。</p></article>
-        <div class="pain-list">
-          <article><span>01</span><div><h3>数据分散</h3><p>规划、运营、骑手质量数据分布于不同报表，口径难统一。</p></div></article>
-          <article><span>02</span><div><h3>缺乏穿透</h3><p>汇总报表难以从全国快速下钻至具体问题城市。</p></div></article>
-          <article><span>03</span><div><h3>归因链路长</h3><p>发现异常后仍需临时取数，无法直接判断问题来源。</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="solution" class="section solution-section">
-      <div class="wrap">
-        <div class="section-intro light"><p class="eyebrow">02 · SOLUTION DESIGN</p><h2>从“人工拼表”到统一监控工具</h2><p>以真实管理动作组织信息架构：先观察整体趋势，再穿透异常城市，最后通过规则标签辅助归因。</p></div>
-        <div class="solution-flow">
-          <article><b>01</b><span class="flow-icon">⌁</span><h3>统一数据</h3><p>以日期 + 城市为关联键，整合规划与实际运营数据。</p></article><i>→</i>
-          <article><b>02</b><span class="flow-icon">▦</span><h3>趋势监控</h3><p>按日/周查看峰值规模、达成、净增与体验变化。</p></article><i>→</i>
-          <article><b>03</b><span class="flow-icon">◎</span><h3>四级下钻</h3><p>全国 → 大区 → 区域 → 城市逐层定位问题。</p></article><i>→</i>
-          <article><b>04</b><span class="flow-icon">✦</span><h3>自动归因</h3><p>将高频判断沉淀为盘点问题与归因标签。</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="demo" class="section dashboard-wrap">
-      <div class="wrap">
-        <div class="section-intro"><p class="eyebrow">03 · INTERACTIVE DEMO</p><h2>交互式看板体验</h2><p>以下数据均为模拟数据。试着切换地区、时间粒度和指标，观察图表与问题城市如何联动。</p></div>
-        <div class="dashboard">
-          <div class="dash-topbar"><div><p>SUMMER CAPACITY CONTROL</p><h3>夏季规划执行驾驶舱</h3></div><div class="status"><i></i>数据已更新 · 08:00</div></div>
-          <div class="dash-tabs"><button class="tab active" data-view="trend">达成趋势</button><button class="tab" data-view="detail">达成明细</button><button class="tab" data-view="case">项目说明</button></div>
-
-          <div id="trendView" class="view active">
-            <div class="filters">
-              <label>分析范围<select id="levelSelect"><option value="全国">全国</option><option value="华东大区">华东大区</option><option value="华南大区">华南大区</option><option value="广州区域">广州区域</option></select></label>
-              <label>城市<select id="citySelect"><option value="全部城市">全部城市</option></select></label>
-              <label>时间粒度<div class="segmented"><button class="grain active" data-grain="day">按日</button><button class="grain" data-grain="week">按周</button></div></label>
-              <label>趋势指标<select id="metricSelect"><option value="progress">峰值有单进度</option><option value="cap">封顶达成率</option><option value="growth">净增率</option><option value="ontime">准时率</option></select></label>
-            </div>
-            <div class="dashboard-kpis" id="kpiCards"></div>
-            <div class="dash-grid">
-              <article class="chart-card wide"><div class="card-head"><div><small id="trendScope">全国 · 按日</small><h4 id="trendTitle">峰值有单进度趋势</h4></div><span class="legend"><i></i>实际值 <i class="target"></i>目标线</span></div><div id="trendChart" class="chart"></div></article>
-              <article class="chart-card"><div class="card-head"><div><small>当前结构</small><h4>城市达成分布</h4></div></div><div id="distributionChart" class="chart"></div></article>
-            </div>
-            <div class="diagnosis-row"><div><small>系统诊断</small><h4 id="diagnosisTitle">整体进度基本达标，仍有 18 个城市需要关注</h4><p id="diagnosisText">主要问题集中在封顶达成与骑手净增不足，建议优先检查问题城市的招募转化与首周留存。</p></div><span class="ai-tag">规则引擎自动生成</span></div>
-          </div>
-
-          <div id="detailView" class="view">
-            <div class="detail-summary"><div><small>问题城市</small><b id="issueCount">18</b></div><div><small>高优先级</small><b class="red">6</b></div><div><small>主要归因</small><b class="text">招募不足 / 留存偏低</b></div><p>点击任一城市，查看指标表现、问题标签和建议动作。</p></div>
-            <div class="table-layout"><div class="table-card"><table><thead><tr><th>城市</th><th>大区</th><th>峰值进度</th><th>封顶达成</th><th>净增率</th><th>问题标签</th></tr></thead><tbody id="cityTable"></tbody></table></div><aside id="cityPanel" class="city-panel"></aside></div>
-          </div>
-
-          <div id="caseView" class="view case-view"><div class="case-grid"><article><small>数据层</small><h4>规划 × 实际统一建模</h4><p>接入 18,500+ 行实际运营数据与 853 行城市规划数据，以日期和城市完成关联。</p></article><article><small>产品层</small><h4>双 Tab 信息架构</h4><p>“趋势监控”负责宏观判断，“达成明细”负责问题定位，避免信息堆叠。</p></article><article><small>分析层</small><h4>40+ 指标与规则归因</h4><p>覆盖规模、效率、体验、净增和骑手质量，将高频诊断逻辑沉淀为标签。</p></article></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="result" class="section wrap result-section">
-      <div class="section-intro"><p class="eyebrow">04 · IMPACT & REFLECTION</p><h2>项目结果与个人贡献</h2><p>项目最终成为夏季运力规划复盘的常用工具，重点价值不是“多做了一张报表”，而是建立了可复用的监控与诊断流程。</p></div>
-      <div class="result-grid"><article class="result-impact"><h3>业务结果</h3><div><b>30 min</b><span>单次手工诊断耗时</span><i>→</i><b>即时</b><span>打开看板即可查看</span></div><ul><li>覆盖全国所有大区、区域与城市</li><li>统一不同管理层的指标口径</li><li>快速定位低达成城市并支持招募、激励动作调整</li></ul></article><article class="role-card"><h3>我的核心工作</h3><ol><li><b>需求与框架</b><span>梳理规划监控场景，定义指标体系与双 Tab 架构</span></li><li><b>数据与分析</b><span>整合规划/实际数据，设计层级下钻与对比逻辑</span></li><li><b>产品与落地</b><span>搭建 NoCode 看板，沉淀问题识别及归因规则</span></li></ol></article></div>
-    </section>
-  </main>
-
-  <footer><div class="wrap"><b>Summer Capacity Monitor Dashboard</b><span>真实项目逻辑 · 模拟数据演示 · 个人作品集</span></div></footer>
-  <script src="./script.js"></script>
-</body>
-</html>
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>加盟26年夏季规划监控看板</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css"><script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script></head><body>
+<header><a href="#top" class="logo"><b>S26</b><span>夏季规划监控</span></a><nav><a href="#background">项目背景</a><a href="#design">建设思路</a><a href="#demo">看板展示</a><a href="#result">项目结果</a></nav><a href="#demo" class="enter">进入看板</a></header>
+<main id="top">
+<section class="hero wrap"><div><p class="eyebrow">OPERATIONS DATA PRODUCT · 2026 SUMMER</p><h1>加盟26年夏季<br><em>规划监控看板</em></h1><p>统一接入规划与实际运营数据，通过四级地理下钻、40+核心指标与规则归因，持续监控旺季运力规划执行。</p><a class="primary" href="#demo">查看交互看板 →</a></div><aside><div class="mock-head"><b>全国规划进度</b><span>更新于 08:00</span></div><div class="mock-kpis"><div><small>峰值有单进度</small><b>96.8%</b></div><div><small>封顶达成率</small><b>106.2%</b></div><div><small>问题城市</small><b class="orange">18</b></div></div><div class="mock-bars"><i style="height:45%"></i><i style="height:55%"></i><i style="height:51%"></i><i style="height:64%"></i><i style="height:73%"></i><i style="height:70%"></i><i style="height:82%"></i><i style="height:89%"></i></div></aside></section>
+<section id="background" class="brief wrap"><p class="eyebrow">01 · 项目背景</p><h2>夏季订单峰值较平日提升约20%–30%，但规划、实际运营与骑手质量数据分散在多个BI报表中，管理者需要手工取数拼表，难以及时判断“是否达成、哪里掉队、为什么掉队”。</h2><div class="brief-facts"><span><b>19K+</b>规划与实际数据</span><span><b>30 min</b>原单次诊断耗时</span><span><b>4级</b>全国至城市下钻</span></div></section>
+<section id="design" class="thinking"><div class="wrap"><p class="eyebrow">02 · 建设思路</p><h2>把高频复盘路径沉淀成一套统一工具：先看趋势，再查明细，最后完成问题归因。</h2><div class="thinking-line"><span><b>统一口径</b>规划 × 实际数据建模</span><i>→</i><span><b>趋势判断</b>四类主题持续监控</span><i>→</i><span><b>穿透定位</b>全国至城市逐级下钻</span><i>→</i><span><b>归因闭环</b>规则标签辅助诊断</span></div></div></section>
+<section id="demo" class="demo-section"><div class="wrap"><div class="section-title"><p class="eyebrow">03 · 看板展示</p><h2>夏季规划执行监控</h2><p>以下为模拟数据演示，界面结构与指标逻辑根据原项目还原。</p></div>
+<div class="dashboard"><div class="dashboard-tabs"><button class="tab active" data-view="trend">达成趋势</button><button class="tab" data-view="detail">达成明细</button></div>
+<div id="trendView" class="view active"><div class="trend-controls"><div class="control-group"><label>时间粒度</label><div class="yellow-segment"><button data-grain="week">按周</button><button class="active" data-grain="day">按日</button></div></div><div class="control-group"><label>查看维度</label><div class="yellow-segment dimension"><button class="active" data-level="全国">全国</button><button data-level="大区">大区</button><button data-level="区域">区域</button><button data-level="城市">城市</button></div></div><div class="cascade" id="cascade"><select id="locationSelect"><option>全国</option></select></div><small class="source">raw: 18,532行 ｜ plan: 853行</small></div>
+<div class="trend-block"><h3>峰值规模进度</h3><div class="legend"><label><input type="checkbox" checked data-chart="scale" data-series="0"><i class="c-blue"></i>规划峰值有单人数（柱）</label><label><input type="checkbox" checked data-chart="scale" data-series="1"><i class="c-orange"></i>有单骑手数（柱）</label><label><input type="checkbox" checked data-chart="scale" data-series="2"><i class="c-navy"></i>加盟单进度（线）</label><label><input type="checkbox" checked data-chart="scale" data-series="3"><i class="c-gold"></i>峰值有单进度（线）</label></div><div id="scaleChart" class="trend-chart"></div></div>
+<div class="trend-block"><h3>运力达成</h3><div class="legend"><label><input type="checkbox" checked data-chart="capacity" data-series="0"><i class="c-blue"></i>封顶值（柱）</label><label><input type="checkbox" checked data-chart="capacity" data-series="1"><i class="c-orange"></i>有效骑手数（柱）</label><label><input type="checkbox" checked data-chart="capacity" data-series="2"><i class="c-navy"></i>封顶达成率（线）</label><label><input type="checkbox" checked data-chart="capacity" data-series="3"><i class="c-gold"></i>达成门槛站点占比（线）</label></div><div id="capacityChart" class="trend-chart"></div></div>
+<div class="trend-block"><h3>净增情况</h3><div class="legend"><label><input type="checkbox" checked data-chart="growth" data-series="0"><i class="c-blue"></i>净增骑手数（柱）</label><label><input type="checkbox" checked data-chart="growth" data-series="1"><i class="c-orange"></i>暑期工骑手数（柱）</label><label><input type="checkbox" checked data-chart="growth" data-series="2"><i class="c-gold"></i>净增率（线）</label><label><input type="checkbox" checked data-chart="growth" data-series="3"><i class="c-navy"></i>暑期工占比（线）</label></div><div id="growthChart" class="trend-chart"></div></div>
+<div class="trend-block"><h3>体验和效率</h3><div class="legend"><label><input type="checkbox" checked data-chart="experience" data-series="0"><i class="c-blue"></i>人效（柱）</label><label><input type="checkbox" checked data-chart="experience" data-series="1"><i class="c-purple"></i>大盘配齐时长（柱）</label><label><input type="checkbox" checked data-chart="experience" data-series="2"><i class="c-orange"></i>加盟配齐时长（柱）</label><label><input type="checkbox" checked data-chart="experience" data-series="3"><i class="c-gold"></i>准点率（线）</label></div><div id="experienceChart" class="trend-chart"></div></div></div>
+<div id="detailView" class="view"><div class="detail-title"><h3>26年夏季规划监控看板</h3><button>CSV</button></div><div class="detail-filters"><label>开始日期<input type="date" value="2026-07-22"></label><label>结束日期<input type="date" value="2026-07-22"></label><label>大区<select><option>全部</option><option>华东大区</option><option>华南大区</option></select></label><label>区域<select><option>全部</option><option>浙北区域</option><option>中南区域</option></select></label><label>城市<select><option>全部</option><option>杭州</option><option>广州</option></select></label><button class="query">查询</button><label>对比开始日期<input type="date"></label><label>对比结束日期<input type="date"></label><button class="query compare">查询</button></div><div class="table-scroll"><table><thead><tr><th>大区/区域</th><th>城市</th><th>场景标签</th><th>风险标签</th><th>规划峰值有单人数</th><th>有单骑手数</th><th>有效骑手数</th><th>峰值有单进度</th><th>封顶达成率</th><th>净增率</th><th>问题归因</th></tr></thead><tbody id="detailTable"></tbody></table></div></div></div>
+</div></section>
+<section id="result" class="result wrap"><p class="eyebrow">04 · 项目结果</p><h2>将分散、被动的人工排查，转化为统一、可下钻、可归因的日常监控机制。</h2><div class="result-grid"><article class="impact"><div><small>诊断效率</small><b>30分钟 → 打开即看</b><p>无需从多个BI平台反复取数与拼表，管理者可直接查看规划进度与异常城市。</p></div><div><small>业务覆盖</small><b>全国全部大区与城市</b><p>总部、大区、区域使用同一指标口径，减少跨层级“数对不上”的沟通成本。</p></div><div><small>决策支持</small><b>异常识别 → 归因 → 动作</b><p>快速定位招募不足、留存偏低、出勤不足等问题，支持针对性招募与激励调整。</p></div></article><article class="contribution"><h3>核心贡献</h3><p><b>01</b><span><strong>监控框架设计</strong>梳理业务目标，搭建峰值规模、运力达成、净增、体验效率四类监控主题。</span></p><p><b>02</b><span><strong>数据与产品搭建</strong>整合规划及实际数据，设计双Tab、四级下钻和日期对比交互。</span></p><p><b>03</b><span><strong>规则归因沉淀</strong>将人工复盘中的高频判断转化为问题及归因标签，形成诊断闭环。</span></p></article></div></section>
+</main><footer><div class="wrap"><b>Summer Capacity Monitor Dashboard</b><span>真实项目逻辑 · 模拟数据演示 · 个人作品集</span></div></footer><script src="./script.js"></script></body></html>
